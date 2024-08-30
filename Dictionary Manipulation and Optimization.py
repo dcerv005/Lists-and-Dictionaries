@@ -11,7 +11,7 @@ def merge_dict(dict1, dict2):
     total_time=end_time-start_time
     print("Time to run", total_time)
     print(dict1)
-
+#O(n)
 
 #Task 2
 
@@ -20,17 +20,17 @@ def merge_dict_intercept(dict1, dict2):
     start_time = time.time()
     mergedDict={}
 
-    for i in dict3:
-        if i in dict4:
+    for i in dict1:
+        if i in dict2:
             mergedDict[i]=[]
-            mergedDict[i].append(dict3[i])
-            mergedDict[i].append(dict4[i])
+            mergedDict[i].append(dict1[i])
+            mergedDict[i].append(dict2[i])
     end_time= time.time()
     total_time=end_time-start_time
     print("Time to run", total_time)
     print(mergedDict)
 
-
+#O(n)
 
 #Task 3
 
@@ -48,7 +48,7 @@ def count_frequency(list):
     total_time=end_time-start_time
     print("Time to run", total_time)
     print(dict5)
-
+#O(n)
 
 dict1= {'a': 1, 'b': 2}
 dict2={'c':3, 'd': 4}
