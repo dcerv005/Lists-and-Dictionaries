@@ -22,16 +22,18 @@ print(squareNumbers(4))
 #Task 2
 
 istVar = ['a','b','c','d']
-def reverse(list):
+def reverse(list, i, j):
     start_time= time.time()
-    sublist= list[1:3]
+    sublist= list[i:j+1]
     r=sublist[::-1]
     end_time= time.time()
     reversedtime= end_time-start_time
     print(reversedtime)
     print(r)
 
-reverse(istVar)
+reverse(istVar, 1, 3)
+#O(n)
+
 #Task 3
 list1=['Hello', 'World', 'Alphabet']
 list2=[1, 2, 3]
@@ -42,3 +44,4 @@ def sortlist(list1, list2):
     print(list1)
 
 sortlist(list1, list2)
+#O(n*log(n))
